@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout-land/activity_main.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/book_list_layout.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/card_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/display_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/fragment_book_details.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/fragment_book_list.xml" value="0.11302083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK" />
+</project>

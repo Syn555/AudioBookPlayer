@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AudioBookPlayer</string>
+    <string-array
+        name="title">
+        <item>I Am Number Four</item>
+        <item>The Power Of Six</item>
+        <item>The Rise Of Nine</item>
+        <item>The Fall Of Five</item>
+        <item>The Revenge Of Seven</item>
+        <item>The Fate of Ten</item>
+        <item>United As One</item>
+        <item>The Maze Of Bones</item>
+        <item>The City Of Bones</item>
+        <item>The City of Ashes</item>
+    </string-array>
+    <string-array
+        name="author">
+        <item>Pittacus Lore</item>
+        <item>Pittacus Lore</item>
+        <item>Pittacus Lore</item>
+        <item>Pittacus Lore</item>
+        <item>Pittacus Lore</item>
+        <item>Pittacus Lore</item>
+        <item>Pittacus Lore</item>
+        <item>Rick Riordan</item>
+        <item>Cassandra Clare</item>
+        <item>Cassandra Clare</item>
+    </string-array>
+</resources>
