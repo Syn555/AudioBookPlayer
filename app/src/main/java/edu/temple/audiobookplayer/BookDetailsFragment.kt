@@ -25,7 +25,7 @@ class BookDetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        bookViewModel.getSeletedBook().observe(requireActivity()){
+        bookViewModel.getSelectedBook().observe(requireActivity()){
             val titleTxt = view?.findViewById<TextView>(R.id.bigTitle)
             val authorTxt = view?.findViewById<TextView>(R.id.bigAuthor)
             titleTxt.setText(it.title)

@@ -14,7 +14,7 @@ class BookViewModel : ViewModel(){
         selectedBookObject.value = book
     }
 
-    fun getSeletedBook() : LiveData<BookObject>{
+    fun getSelectedBook() : LiveData<BookObject>{
         return selectedBookObject
     }
 
