@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity(), BookListFragment.BookListFragmentInter
         val author = resources.getStringArray(R.array.author)
         val bookList = BookList()
         for(i in 0..9){
-            bookList.add(BookObject(title[i],author[i]))
         }
         val fragment = supportFragmentManager.findFragmentById(R.id.container1)
         if(fragment != null)

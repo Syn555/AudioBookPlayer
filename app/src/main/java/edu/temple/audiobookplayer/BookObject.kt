@@ -3,9 +3,11 @@ package edu.temple.audiobookplayer
 import android.os.Parcel
 import android.os.Parcelable
 
-data class BookObject(val title: String?, val author: String?) : Parcelable {
+data class BookObject(val title: String?, val author: String?, val id: Int?, val url: String?) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
+        parcel.readString(),
+        parcel.readInt(),
         parcel.readString()) {
     }
 
