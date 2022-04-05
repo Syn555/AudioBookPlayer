@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
+import android.widget.ImageView
+import com.squareup.picasso.Picasso
 
 class BookDetailsFragment : Fragment() {
     lateinit var bookViewModel: BookViewModel
@@ -28,6 +30,8 @@ class BookDetailsFragment : Fragment() {
         bookViewModel.getSelectedBook().observe(requireActivity()){
             val titleTxt = view?.findViewById<TextView>(R.id.bigTitle)
             val authorTxt = view?.findViewById<TextView>(R.id.bigAuthor)
+            val bookcover = view?.findViewById<ImageView>(R.id.bookcover)
+            Picasso.get().load(it.url).into(bookcover)
             titleTxt.setText(it.title)
             authorTxt.setText(it.author)
         }

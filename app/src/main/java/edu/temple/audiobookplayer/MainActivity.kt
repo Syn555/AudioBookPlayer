@@ -3,7 +3,8 @@ package edu.temple.audiobookplayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.lifecycle.ViewModelProvider
+import android.widget.Button
+
 
 class MainActivity : AppCompatActivity(), BookListFragment.BookListFragmentInterface {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +13,9 @@ class MainActivity : AppCompatActivity(), BookListFragment.BookListFragmentInter
         val title = resources.getStringArray(R.array.title)
         val author = resources.getStringArray(R.array.author)
         val bookList = BookList()
-        for(i in 0..9){
+        val search = findViewById<Button>(R.id.search)
+        search.setOnClickListener {
+            onSearchRequested()
         }
         val fragment = supportFragmentManager.findFragmentById(R.id.container1)
         if(fragment != null)
