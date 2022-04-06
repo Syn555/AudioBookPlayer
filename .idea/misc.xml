@@ -4,12 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout-land/activity_main.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout-large/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/activity_search.xml" value="0.3980263157894737" />
         <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/book_list_layout.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/booklist_items_layout.xml" value="0.20072992700729927" />
         <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/card_layout.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/display_layout.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/fragment_book_details.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/fragment_book_list.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/fragment_bool_list.xml" value="0.1" />
+        <entry key="..\:/Users/tngo5/AndroidStudioProjects/AudioBookPlayer/app/src/main/res/layout/two_pane_layout.xml" value="0.10960144927536232" />
       </map>
     </option>
   </component>

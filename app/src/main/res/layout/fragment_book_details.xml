@@ -3,41 +3,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".BookDetailsFragment">
+    android:layout_height="match_parent"
+    tools:context=".BookDetailsFragment"
+    >
 
     <TextView
-        android:id="@+id/bigTitle"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:id="@+id/authDet"
+        android:layout_width="241dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="75dp"
+        android:text="TextView"
         android:textAlignment="center"
-        android:textSize="60sp"
+        android:textSize="18sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bookcover"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/titleDet" />
 
     <TextView
-        android:id="@+id/bigAuthor"
-        android:layout_width="0dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="4dp"
+        android:id="@+id/titleDet"
+        android:layout_width="367dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/authDet"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bigTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/bookCover" />
 
     <ImageView
-        android:id="@+id/bookcover"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/bookCover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/titleDet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@tools:sample/avatars" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

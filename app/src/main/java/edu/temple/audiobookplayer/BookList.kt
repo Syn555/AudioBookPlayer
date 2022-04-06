@@ -1,20 +1,34 @@
 package edu.temple.audiobookplayer
 
-class BookList {
-    val list = arrayListOf<BookObject>()
-    fun add(book : BookObject){
-        list.add(book)
+import androidx.lifecycle.ViewModel
+import org.json.JSONArray
+import java.io.Serializable
+
+class BookList : ViewModel(),Serializable{
+    companion object{
+        val BOOKLIST_KEY = "Booklist"
+    }
+    private val bookList : ArrayList<Book> by lazy {
+        ArrayList()
     }
 
-    fun remove(book : BookObject){
-        list.remove(book)
+    fun add(book: Book) {
+        bookList.add(book)
     }
 
-    operator fun get(index : Int) : BookObject{
-        return list.get(index)
+    fun clearBooks(){
+        bookList.clear()
     }
 
-    fun size() : Int{
-        return list.size
+    fun populateBooks (books: JSONArray) {
+        for (j in 0 until books.length()) {
+            bookList.add(Book(books.getJSONObject(j)))
+        }
     }
+    fun copyBooks(newBooks: BookList){
+        bookList.clear()
+        bookList.addAll(newBooks.bookList)
+    }
+    operator fun get(index: Int) = bookList.get(index)
+    fun size() = bookList.size
 }
