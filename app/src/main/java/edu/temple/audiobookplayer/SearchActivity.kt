@@ -12,7 +12,6 @@ import com.android.volley.Request
 import com.android.volley.toolbox.JsonArrayRequest
 
 class SearchActivity : AppCompatActivity() {
-
     val searchButton: ImageButton by lazy{
         findViewById(R.id.searchButton)
     }
