@@ -22,16 +22,16 @@ class BookDetailsFragment : Fragment() {
         coverOfBook = view.findViewById<ImageView>(R.id.bookCover)
         authorOfBook= view.findViewById<TextView>(R.id.authDet)
         titleOfBook = view.findViewById<TextView>(R.id.titleDet)
-
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        ViewModelProvider(requireActivity()).get(bookViewModel::class.java).getBook().observe(requireActivity(), {
+        ViewModelProvider(requireActivity()).get(BookViewModel::class.java).getBook().observe(requireActivity(), {
             changeBook(it)
         })
     }
+
     private fun changeBook(book: Book?){
         book?.run {
             titleOfBook.text=title
@@ -39,5 +39,4 @@ class BookDetailsFragment : Fragment() {
             Picasso.get().load(coverURL).into(coverOfBook)
         }
     }
-
 }
