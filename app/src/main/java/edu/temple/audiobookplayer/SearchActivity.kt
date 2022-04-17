@@ -17,7 +17,6 @@ class SearchActivity : AppCompatActivity() {
         findViewById(R.id.searchButton)
     }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
@@ -35,7 +34,7 @@ class SearchActivity : AppCompatActivity() {
                     )
                     finish()
                 }, {})
-            )//volleyRequest
-        }//end of onClickListener
-    }//End of onCreate
+            )
+        }
+    }
 }

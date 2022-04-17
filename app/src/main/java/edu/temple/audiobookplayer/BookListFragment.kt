@@ -19,13 +19,12 @@ class BookListFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        // Inflate the booklistfragment layout
         return inflater.inflate(R.layout.fragment_book_list,container,false)
-    }//end of view
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val bookViewModel = ViewModelProvider(requireActivity()).get(bookViewModel::class.java)
+        val bookViewModel = ViewModelProvider(requireActivity()).get(BookViewModel::class.java)
         val clicked:(Book)->Unit={
                 book: Book ->  bookViewModel.setSelectedBook(book)
             (activity as BookSelectedInterface).bookSelected()
@@ -34,13 +33,13 @@ class BookListFragment : Fragment() {
             layoutManager = LinearLayoutManager(requireActivity())
             adapter=CustomAdapter(bookList,clicked)
         }
-    }//end of onViewCreated
+    }
 
     fun bookListUpdated(){
         view?.apply{
             (this as RecyclerView).adapter?.notifyDataSetChanged()
         }
-    }//end of bookListUpdated
+    }
 
     companion object{
         @JvmStatic
@@ -55,4 +54,4 @@ class BookListFragment : Fragment() {
     interface BookSelectedInterface {
         fun bookSelected()
     }
-}//end of BooklistFragment
+}
