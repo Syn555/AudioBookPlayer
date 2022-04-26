@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import android.util.Log
+import java.lang.reflect.Array.get
 
 private const val BOOK_LIST = "booklist"
 
@@ -28,6 +30,7 @@ class BookListFragment : Fragment() {
         val clicked:(Book)->Unit={
                 book: Book ->  bookViewModel.setSelectedBook(book)
             (activity as BookSelectedInterface).bookSelected()
+            Log.d("CoverURL: ", API.getBookDataUrl(book.id))
         }
         with( view as RecyclerView){
             layoutManager = LinearLayoutManager(requireActivity())

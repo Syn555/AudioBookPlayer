@@ -3,6 +3,7 @@ package edu.temple.audiobookplayer
 import androidx.lifecycle.ViewModel
 import org.json.JSONArray
 import java.io.Serializable
+import android.util.Log
 
 class BookList : ViewModel(),Serializable{
     companion object{
@@ -22,6 +23,7 @@ class BookList : ViewModel(),Serializable{
 
     fun populateBooks (books: JSONArray) {
         for (j in 0 until books.length()) {
+            Log.d("JSONObject",books.getJSONObject(j).toString())
             bookList.add(Book(books.getJSONObject(j)))
         }
     }
