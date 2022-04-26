@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.ImageButton
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonArrayRequest
+import android.util.Log
 
 class SearchActivity : AppCompatActivity() {
     val searchButton: ImageButton by lazy{
@@ -23,6 +24,7 @@ class SearchActivity : AppCompatActivity() {
         searchButton.setOnClickListener {
             val url = "https://kamorris.com/lab/cis3515/search.php?term="+
                     findViewById<EditText>(R.id.booksearch).text.toString()
+            Log.d("URL:", url)
             Volley.newRequestQueue(this).add(
                 JsonArrayRequest(Request.Method.GET, url, null, {
                     setResult(

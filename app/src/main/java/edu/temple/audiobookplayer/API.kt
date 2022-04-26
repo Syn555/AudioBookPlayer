@@ -1,9 +1,14 @@
 package edu.temple.audiobookplayer
 
+import android.util.SparseArray
+
 class API {
     companion object URL {
-        fun getBookDataUrl(id: Int): String {
-            return "https://kamorris.com/lab/cis3515/book.php?id=${id}"
+        val DownloadedList: ArrayList<String> by lazy{
+            ArrayList()
+        }
+        fun getBookDataUrl(bookId: Int): String {
+            return "https://kamorris.com/lab/audlib/download.php?id=${bookId}"
         }
     }
 }
